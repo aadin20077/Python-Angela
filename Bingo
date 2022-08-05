@@ -1,0 +1,176 @@
+class columns:
+    
+    def first_column():
+        sum=0  
+        for i in range(5):
+            if d[i][0]:
+                sum+=1
+    
+        if sum==5:
+            return True
+        else:
+            return False
+    
+    def second_column():
+        sum=0  
+        for i in range(5):
+            if d[i][1]:
+                sum+=1
+    
+        if sum==5:
+            return True
+        else:
+            return False
+            
+    def third_column():
+        sum=0  
+        for i in range(5):
+            if d[i][2]:
+                sum+=1
+    
+        if sum==5:
+            return True
+        else:
+            return False
+            
+    def fourth_column():
+        sum=0  
+        for i in range(5):
+            if d[i][3]:
+                sum+=1
+    
+        if sum==5:
+            return True
+        else:
+            return False
+            
+    def fifth_column():
+        sum=0  
+        for i in range(5):
+            if d[i][4]:
+                sum+=1
+    
+        if sum==5:
+            return True
+        else:
+            return False       
+
+class diagnol:
+    
+    def first_diagnol():
+        sum=0
+        for i in range(5):
+            if d[i][i]==1:
+                sum+=1
+        
+        if sum==5:
+            return True
+            
+    def second_diagnol():
+        sum=0
+        if d[0][4]==1:
+            if d[1][3]==1:
+                if d[2][2]==1:
+                    if d[3][1]==1:
+                        if d[4][0]==1:
+                            return True
+            
+class row:
+    
+    def first_row():
+        sum=0
+        for i in range(5):
+            if d[0][i]==1:
+                sum+=1
+        
+        if sum==5:
+            return True
+    
+    def second_row():
+        sum=0
+        for i in range(5):
+            if d[1][i]==1:
+                sum+=1
+        
+        if sum==5:
+            return True        
+    
+    def third_row():
+        sum=0
+        for i in range(5):
+            if d[2][i]==1:
+                sum+=1
+        
+        if sum==5:
+            return True
+    
+    def fourth_row():
+        sum=0
+        for i in range(5):
+            if d[3][i]==1:
+                sum+=1
+        
+        if sum==5:
+            return True
+    
+    def fifth_row():
+        sum=0
+        for i in range(5):
+            if d[4][i]==1:
+                sum+=1
+        
+        if sum==5:
+            return True        
+
+def bingo_validator():
+    
+    a = columns.first_column()
+    b = columns.second_column()
+    c = columns.third_column()
+    d = columns.fourth_column()
+    e = columns.fifth_column()
+    f = diagnol.first_diagnol()
+    g = diagnol.second_diagnol()
+    h = row.first_row()
+    i = row.second_row()
+    j = row.third_row()
+    k = row.fourth_row()
+    l = row.fifth_row()
+    
+    if a==True:
+        print(True)
+    elif b==True:
+        print(True)
+    elif c==True:
+        print(True)
+    elif d==True:
+        print(True)
+    elif e==True:
+        print(True) 
+    elif f==True:
+        print(True)
+    elif g==True:
+        print(True)
+    elif h==True:
+        print(True)
+    elif i==True:
+        print(True)    
+    elif j==True:
+        print(True)
+    elif k==True:
+        print(True)
+    elif l==True:
+        print(True)  
+    else:
+        print(False)
+    #for columns
+                        
+        
+a=[1,0,1,1,1]
+b=[0,0,0,0,0]
+c=[0,0,0,0,0]
+d=[0,0,0,0,0]
+e=[0,0,0,0,0]
+d = [a,b,c,d,e]
+
+bingo_validator()   
